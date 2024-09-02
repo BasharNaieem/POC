@@ -1,5 +1,5 @@
 module "createInstanceAws" {
-  source              = "../../modules/createInstanceAws"
+  source              = "/modules/createInstanceAws"
   region              = var.region
   ami                 = var.ami
   instance_type       = var.instance_type
