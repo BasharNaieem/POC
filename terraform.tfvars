@@ -1,0 +1,7 @@
+region              = "us-east-1"
+ami                 = "ami-0e86e20dae9224db8"
+instance_type       = "t2.micro"
+key_name            = "bashar-cprime"
+security_group_name = "jenkins_security_group_5"
+user_data           = "./install.sh"
+instance_name       = "apache_Jenkins_Instance"
