@@ -38,7 +38,7 @@ resource "aws_security_group" "jenkins_sg" {
 }
 
 # Create an EC2 instance
-resource "aws_instance" "jenkins_server" {
+resource "aws_instance" "server" {
   ami                         = var.ami
   instance_type               = var.instance_type
   key_name                    = var.key_name
@@ -48,7 +48,7 @@ resource "aws_instance" "jenkins_server" {
   user_data = file(var.user_data)
 
   tags = {
-    Name = var.instance_name
+    Name = var.instance_name_jenkins
   }
 }
 
